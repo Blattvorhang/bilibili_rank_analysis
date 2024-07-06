@@ -19,6 +19,7 @@ pip install -r requirements.txt
 - `get_video_data.ipynb`: 获取Bilibili排行榜视频数据
 - `get_user_data.ipynb`: 获取视频对应的up主数据
 - `analysis.ipynb`: 数据分析
+- `rank_data.py`: 2024年6月30日Bilibili排行榜字典数据
 - `bilibili_rank.csv`: 2024年6月30日Bilibili排行榜视频数据
 - `bilibili_user.csv`: 2024年6月30日Bilibili排行榜视频对应的up主数据
 - `bilibili_TV.jpg`: Bilibili小电视mask
@@ -28,27 +29,35 @@ pip install -r requirements.txt
 
 ## 视频数据
 - 视频播放量与视频时长的关系
-  ![](./imgs/duration.png)
+
+![](./imgs/duration.png)
 
 - 热门视频发布时间
-  ![](./imgs/pubdate.png)
+
+![](./imgs/pubdate.png)
 
 - 推荐指数
-  $$推荐指数=硬币×0.4+收藏×0.3+弹幕×0.4+播放×0.25+点赞×0.4+分享×0.6$$
-  ![](./imgs/recommendation_index.png)
+
+$$\text{推荐指数}=\text{硬币}\times 0.4+\text{收藏}\times 0.3+\text{弹幕}\times 0.4+\text{播放}\times 0.25+\text{点赞}\times 0.4+\text{分享}\times 0.6$$
+
+![](./imgs/recommendation_index.png)
 
 - 热门视频地理位置分布
-  ![](./geo_heatmap/bilibili_map.png)
+
+![](./geo_heatmap/bilibili_map.png)
 
 - 视频分辨率分布
-  ![](./imgs/resolution.png)
+
+![](./imgs/resolution.png)
 
 ## up主数据
 - up主性别分布
-  ![](./imgs/sex_ratio.png)
+
+![](./imgs/sex_ratio.png)
 
 - 视频播放量与up主粉丝数的关系
-  ![](./imgs/follower.png)
+
+![](./imgs/follower.png)
 
 ## 不足
 ### 未分析的角度
