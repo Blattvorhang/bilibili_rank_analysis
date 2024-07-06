@@ -30,36 +30,36 @@ pip install -r requirements.txt
 ## 视频数据
 - 视频播放量与视频时长的关系
 
-![](./imgs/duration.png)
+  ![](./imgs/duration.png)
 
 - 热门视频发布时间
 
-![](./imgs/pubdate.png)
+  ![](./imgs/pubdate.png)
 
 - 推荐指数
 
   B站推荐核心算法（2021年泄露版本）：
 
-$$\text{推荐指数}=\text{硬币}\times 0.4+\text{收藏}\times 0.3+\text{弹幕}\times 0.4+\text{播放}\times 0.25+\text{点赞}\times 0.4+\text{分享}\times 0.6$$
+  $$\text{推荐指数}=\text{硬币}\times 0.4+\text{收藏}\times 0.3+\text{弹幕}\times 0.4+\text{播放}\times 0.25+\text{点赞}\times 0.4+\text{分享}\times 0.6$$
 
-![](./imgs/recommendation_index.png)
+  ![](./imgs/recommendation_index.png)
 
 - 热门视频地理位置分布
 
-![](./geo_heatmap/bilibili_map.png)
+  ![](./geo_heatmap/bilibili_map.png)
 
 - 视频分辨率分布
 
-![](./imgs/resolution.png)
+  ![](./imgs/resolution.png)
 
 ## up主数据
 - up主性别分布
 
-![](./imgs/sex_ratio.png)
+  ![](./imgs/sex_ratio.png)
 
 - 视频播放量与up主粉丝数的关系
 
-![](./imgs/follower.png)
+  ![](./imgs/follower.png)
 
 ## 不足
 ### 未分析的角度
