@@ -38,6 +38,8 @@ pip install -r requirements.txt
 
 - 推荐指数
 
+  B站推荐核心算法（2021年泄露版本）：
+
 $$\text{推荐指数}=\text{硬币}\times 0.4+\text{收藏}\times 0.3+\text{弹幕}\times 0.4+\text{播放}\times 0.25+\text{点赞}\times 0.4+\text{分享}\times 0.6$$
 
 ![](./imgs/recommendation_index.png)
