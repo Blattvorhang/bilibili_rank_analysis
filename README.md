@@ -52,6 +52,8 @@ $$\text{推荐指数}=\text{硬币}\times 0.4+\text{收藏}\times 0.3+\text{弹�
 
   ![](./imgs/resolution.png)
 
+  ![](./imgs/landscape_portrait.png)
+
 ## up主数据
 - up主性别分布
 
