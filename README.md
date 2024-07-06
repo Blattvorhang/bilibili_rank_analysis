@@ -1,7 +1,7 @@
 # Bilibili Rank Analysis
 大数据视域下的B站视频流行趋势研究。分析[Bilibili排行榜](https://www.bilibili.com/v/popular/rank/all)视频数据，探究视频播放量与up主粉丝数的关系，视频类型、分区、地理位置分布等。包含了数据爬取、数据分析、数据可视化等完整的数据挖掘过程。
 
-![](./bilibili_wordcloud.png)
+![](./wordcloud/bilibili_wordcloud.png)
 
 # 爬虫
 [Bilibili-API](https://github.com/Nemo2011/bilibili-api)
@@ -10,29 +10,48 @@
 pip install bilibili-api-python
 ```
 
+# 依赖
+```shell
+pip install -r requirements.txt
+```
+
 # 文件说明
-- `get_video_data.py`: 获取Bilibili排行榜视频数据
-- `get_user_data.py`: 获取视频对应的up主数据
-- `analysis.py`: 数据分析
+- `get_video_data.ipynb`: 获取Bilibili排行榜视频数据
+- `get_user_data.ipynb`: 获取视频对应的up主数据
+- `analysis.ipynb`: 数据分析
 - `bilibili_rank.csv`: 2024年6月30日Bilibili排行榜视频数据
 - `bilibili_user.csv`: 2024年6月30日Bilibili排行榜视频对应的up主数据
 - `bilibili_TV.jpg`: Bilibili小电视mask
 
 # 分析内容
 以下均基于2024年6月30日Bilibili排行榜数据（共100条）。
+
 ## 视频数据
 - 视频播放量与视频时长的关系
+  ![](./imgs/duration.png)
+
 - 热门视频发布时间
+  ![](./imgs/pubdate.png)
+
 - 推荐指数
+  $$推荐指数=硬币×0.4+收藏×0.3+弹幕×0.4+播放×0.25+点赞×0.4+分享×0.6$$
+  ![](./imgs/recommendation_index.png)
+
 - 热门视频地理位置分布
+  ![](./geo_heatmap/bilibili_map.png)
+
 - 视频分辨率分布
+  ![](./imgs/resolution.png)
 
 ## up主数据
 - up主性别分布
+  ![](./imgs/sex_ratio.png)
+
 - 视频播放量与up主粉丝数的关系
+  ![](./imgs/follower.png)
 
 ## 不足
-### 没有分析的角度
+### 未分析的角度
 - 热门视频类型分布
 - 分区分析
 - up主头衔（official title）
@@ -49,7 +68,7 @@ pip install bilibili-api-python
 ### 其他
 - 一个up主只能同时拥有一个热门视频，更新频繁的up主可能会将自己之前的热门视频顶掉
 
-## 参考
+# 参考
 - [bilibili 综合热门排行榜及数据分析](https://www.cnblogs.com/echo-1/p/15737172.html)
 - [bilibili API](https://github.com/Nemo2011/bilibili-api)
 - [pyecharts地区热力图](https://blog.csdn.net/qq_39451578/article/details/104372597)

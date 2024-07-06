@@ -1,0 +1,12 @@
+numpy
+matplotlib
+seaborn
+pandas
+scikit-learn
+bilibili-api-python
+asyncio
+nest_asyncio
+wordcloud
+jieba
+pyecharts
+echarts-china-provinces-pypkg
